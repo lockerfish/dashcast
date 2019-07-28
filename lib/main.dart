@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -82,6 +81,7 @@ class _PlaybackButtonsState extends State<PlaybackButtons> {
     _currentTime = '00:00:00';
   }
 
+  /// Music file courtesy of https://incompetech.filmmusic.io
   Future<String> setupMusicFile() async {
     final dir = await getApplicationDocumentsDirectory();
     final file = File('${dir.path}/surf_skimmy.mp3');
