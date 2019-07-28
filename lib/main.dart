@@ -101,6 +101,7 @@ class _PlaybackButtonsState extends State<PlaybackButtons> {
     setState(() {
       _currentTime = '00:00:00';
       _playPosition = 0.0;
+      _isPaused = false;
     });
   }
 
